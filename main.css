@@ -1,0 +1,82 @@
+*{
+    color: black;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+button {
+    border: none;
+    margin: none;
+}
+
+.text {
+    font-size: calc(0.7dvh + 0.7dvw);
+    text-align: center;
+    font-family: monospace;
+}
+
+.small-text {
+    font-size: calc(0.5dvh + 0.5dvw);
+}
+
+.title-text {
+    font-size: calc(2dvh + 1dvw);
+}
+
+.flexyboxy {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 5dvw;
+}
+
+.flexyobjecty {
+    background-color: blue;
+    width: 20dvw;
+}
+
+.projects {
+    color: black;
+    padding: 1dvh;
+}
+
+.projectphoto {
+    object-fit: scale-down;
+    width: 100%;
+}
+
+.header {
+    background-color: black;
+    padding: 1dvh;
+}
+
+.header-text {
+    color: white;
+}
+
+.current-projects {
+    width: 50%;
+    margin: auto;
+}
+
+.past-projects {
+    width: 75%;
+    margin: auto;
+}
+
+@media (aspect-ratio <= 0.75) {
+    .past-projects {
+        width: 100%;
+    }
+
+    .current-projects {
+        width: 100%;
+    }
+
+    .flexyobjecty {
+        background-color: blue;
+        width: 80%;
+    }
+
+}
