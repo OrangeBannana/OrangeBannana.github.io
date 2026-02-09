@@ -2,7 +2,6 @@
     color: black;
     margin: 0px;
     padding: 0px;
-
 }
 
 button {
@@ -11,28 +10,32 @@ button {
 }
 
 .text {
-    font-size: calc(0.7dvh + 0.7dvw);
+    font-size: calc(.9dvh + 0.9dvw);
     text-align: center;
-    font-family: monospace;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
 }
 
 .small-text {
-    font-size: calc(0.5dvh + 0.5dvw);
+    font-size: calc(0.65dvh + 0.65dvw);
 }
 
 .title-text {
     font-size: calc(2dvh + 1dvw);
+    font-weight: bold;
 }
 
 .flexyboxy {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-items: flex-start;
     gap: 5dvw;
+    row-gap: 1dvh;
 }
 
 .flexyobjecty {
-    background-color: blue;
+    background-color: white;
     width: 20dvw;
 }
 
@@ -42,8 +45,18 @@ button {
 }
 
 .projectphoto {
-    object-fit: scale-down;
-    width: 100%;
+    object-fit: cover;
+    width: 20dvw;
+    height: 12dvw;
+    border-radius: .2cqw;
+    outline: 0.1dvw solid black;
+    outline-offset: -0.1dvw;
+    transition: outline 0.1s ease-in-out, outline-offset 0.1s ease-in-out;
+}
+
+.flexyobjecty:hover .projectphoto {
+    outline: 0.65dvw solid black;
+    outline-offset: -0.65dvw;
 }
 
 .header {
@@ -75,8 +88,13 @@ button {
     }
 
     .flexyobjecty {
-        background-color: blue;
         width: 80%;
+    }
+
+    .projectphoto {
+        width: 80dvw;
+        height: 48dvw;
+        border-radius: .2cqw;
     }
 
 }
